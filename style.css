@@ -191,6 +191,7 @@ div.timetable div.versionInfo {
 
     td{
         border-top: 2px solid #94B9EF;
+        display: flex;
     }
 
     table.timetable td.empty {
@@ -203,12 +204,62 @@ div.timetable div.versionInfo {
     }
 
     tbody {
-        display: grid;
+        display: block;
     }
 
     tr{
         margin-bottom: 5vh;
         width: auto;
+    }
+
+    td:nth-child(2)::before {
+        content: "7:30 - 8:15";
+    }
+    
+    td:nth-child(3)::before {
+        content: "8:25 - 9:10";
+    }
+    
+    td:nth-child(4)::before {
+        content: "9:20 - 10:05";
+    }
+
+    td:nth-child(5)::before {
+        content: "10:20 - 11:05";
+    }
+    
+    td:nth-child(6)::before {
+        content: "11:15 - 12:00";
+    }
+    
+    td:nth-child(7)::before {
+        content: "12:10 - 12:55";
+    }
+
+    td:nth-child(8)::before {
+        content: "13:05 - 13:50";
+    }
+    
+    td:nth-child(9)::before {
+        content: "14:00 - 14:45";
+    }
+
+    td:nth-child(10)::before {
+        content: "14:55 - 15:40";
+    }
+
+    td:nth-child(11)::before {
+        content: "15:50 - 16:35";
+    }
+
+    td::before {
+        white-space: pre-wrap;
+        text-align: center;
+        font-weight: bold;
+        background-color: #94B9EF;
+        color: #FFFFFF;
+        width: 5vw;
+        height: 100px;
     }
 
     tr:first-child{
