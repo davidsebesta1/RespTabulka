@@ -152,7 +152,7 @@ div.timetable div.versionInfo {
     table.timetable,
     table.timetable td,
     table.timetable th.day{
-        width: 82vw;
+        width: 100vw;
         display: block;
         text-align: center;
         background-color: #FFFFFF;
